@@ -1,0 +1,29 @@
+{
+  "name": "api-backwardango",
+  "version": "1.1.0",
+  "description": "🔮 REST-ful API to evaluate whether an asset is in backwardation or contango.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joemccann/api-backwardango.git"
+  },
+  "keywords": [],
+  "author": "Joe McCann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joemccann/api-backwardango/issues"
+  },
+  "homepage": "https://github.com/joemccann/api-backwardango#readme",
+  "dependencies": {
+    "bignumber.js": "^8.1.1",
+    "bitmex": "github:joemccann/bitmex"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
+  }
+}
