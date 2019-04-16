@@ -1,6 +1,6 @@
 {
   "name": "api-backwardango",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "🔮 REST-ful API to evaluate whether an asset is in backwardation or contango.",
   "main": "index.js",
   "scripts": {
