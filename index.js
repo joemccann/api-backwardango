@@ -13,15 +13,30 @@ const getPrice = async (args) => {
     asset,
     exchange
   } = args
+
+  if (exchange === 'BITFLYER') {
+
+  }
+
   if (exchange === 'BITMEX') {
     const { err, data } = await bitmex.price(asset)
     if (err) return { err }
     return { data }
   }
-  if (exchange === 'OKEX') {
+
+  if (exchange === 'CRYPTOFACILITIES') {
 
   }
+
   if (exchange === 'DEREBIT') {
+
+  }
+
+  if (exchange === 'HUOBI') {
+
+  }
+
+  if (exchange === 'OKEX') {
 
   } else return { err: `Exchange, ${exchange}, not supported.` }
 }
