@@ -39,7 +39,7 @@ test('pass - get values', async t => {
   t.equals(statusCode, 200)
   const keys = Object.keys(data)
   t.deepEquals(keys,
-    [ 'code', 'date', 'delta', 'futures',
+    [ 'code', 'date', 'delta', 'exchange', 'futures',
       'futuresPrice', 'spot', 'spotPrice', 'state', 'timestamp' ])
   t.end()
 })
@@ -58,7 +58,7 @@ test('pass - get values', async t => {
   t.equals(statusCode, 200)
   const keys = Object.keys(data)
   t.deepEquals(keys,
-    [ 'code', 'date', 'delta', 'futures',
+    [ 'code', 'date', 'delta', 'exchange', 'futures',
       'futuresPrice', 'spot', 'spotPrice', 'state', 'timestamp' ])
   t.end()
 })
