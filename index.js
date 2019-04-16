@@ -86,8 +86,10 @@ exports['api-backwardango'] = async (req, res) => {
     code,
     date,
     delta,
-    futures: futuresPrice,
-    spot: spotPrice,
+    futures,
+    futuresPrice,
+    spot,
+    spotPrice,
     state,
     timestamp
   }
