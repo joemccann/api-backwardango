@@ -15,9 +15,15 @@ function send (obj) {
   return body
 }
 
+function set (value) {
+  this[value] = value
+  return this
+}
+
 const res = {
   status,
-  send
+  send,
+  set
 }
 
 test('sanity', t => {
@@ -25,7 +31,7 @@ test('sanity', t => {
   t.end()
 })
 
-test('pass - get values', async t => {
+test('pass - get values .BXBT, XBTM19', async t => {
   const req = {
     body: {
       spot: '.BXBT',
@@ -44,7 +50,7 @@ test('pass - get values', async t => {
   t.end()
 })
 
-test('pass - get values', async t => {
+test('pass - get values .BXBT, XBTU19', async t => {
   const req = {
     body: {
       spot: '.BXBT',

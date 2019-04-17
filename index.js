@@ -1,3 +1,4 @@
+const cors = require('cors-for-cloud-functions')
 const Bitmex = require('bitmex')
 const Num = require('bignumber.js')
 
@@ -41,7 +42,11 @@ const getPrice = async (args) => {
   } else return { err: `Exchange, ${exchange}, not supported.` }
 }
 
-exports['api-backwardango'] = async (req, res) => {
+exports['api-backwardango'] = async (request, response) => {
+  const { req, res, isOptions } = cors(request, response)
+
+  if (isOptions) return res.status(204).send('')
+
   const {
     body = {},
     query = {}

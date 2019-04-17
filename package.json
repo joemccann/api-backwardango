@@ -20,7 +20,8 @@
   "homepage": "https://github.com/joemccann/api-backwardango#readme",
   "dependencies": {
     "bignumber.js": "^8.1.1",
-    "bitmex": "github:joemccann/bitmex"
+    "bitmex": "github:joemccann/bitmex",
+    "cors-for-cloud-functions": "github:joemccann/cors-for-cloud-functions"
   },
   "devDependencies": {
     "standard": "^12.0.1",
